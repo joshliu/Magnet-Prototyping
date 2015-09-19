@@ -55,9 +55,6 @@
 	self.magnet = [Magnet sharedMagnet];
 	self.magnet.delegate = self;
 	
-	// set up calibration view
-	self.calibrationView.calibrationDelegate = self;
-	[self addSubview:self.calibrationView];
 	
 	// add cursor
 	[self addSubview:self.cursorView];
@@ -327,6 +324,7 @@ self.mag = [[UILabel alloc ]initWithFrame:CGRectMake(0, 200, 200, 50)];
         [path stroke];
     }
     incrementalImage = UIGraphicsGetImageFromCurrentImageContext();
+    //[self openCVFunction:incrementalImage];
     UIGraphicsEndImageContext();
 }
 
