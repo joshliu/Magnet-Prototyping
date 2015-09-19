@@ -62,7 +62,7 @@
 			UIGraphicsEndImageContext();
 		}
 	}
-	myVC.drawingIdentifier = self.drawingIdentifier;
+	myVC.drawingIdentifier = @"";
 	myVC.snapshotImage = self.snapshotImage;
 	[self presentViewController:myVC animated:YES completion:nil];
 }

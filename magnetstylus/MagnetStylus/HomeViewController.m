@@ -30,7 +30,7 @@
 	[self.titleLabel setTextAlignment:NSTextAlignmentCenter];
 	[self.titleLabel setFont: [UIFont fontWithName:@"Avenir-Heavy" size:50]];
 	[self.titleLabel setTextColor: [UIColor whiteColor]];
-	[self.titleLabel setText: @"MagnetStylus"];
+	[self.titleLabel setText: @"Magnus"];
 	[self.view addSubview:self.titleLabel];
 	
 	self.startButton = [[UILabel alloc] init];

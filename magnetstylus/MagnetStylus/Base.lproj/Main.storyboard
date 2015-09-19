@@ -56,11 +56,20 @@
                         <viewControllerLayoutGuide type="bottom" id="ApB-4A-PXW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3UX-17-AW4">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="HuU-yL-hdv">
+                                <rect key="frame" x="0.0" y="135" width="355" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d0b-kh-tRi">
+                                <rect key="frame" x="0.0" y="71" width="375" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T8A-lS-t4g">
-                                <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="370" height="44"/>
                                 <items>
                                     <navigationItem title="Menu" id="lOw-94-gU3">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="uIB-vx-KjY">
@@ -71,21 +80,12 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="HuU-yL-hdv">
-                                <rect key="frame" x="50" y="128" width="468" height="192"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d0b-kh-tRi">
-                                <rect key="frame" x="16" y="71" width="536" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="backButtonOut" destination="uIB-vx-KjY" id="nEm-6V-YGN"/>
                         <outlet property="drawings" destination="HuU-yL-hdv" id="PCO-7B-Rbe"/>
@@ -96,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meS-bg-XK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="257" y="850"/>
+            <point key="canvasLocation" x="257.5" y="953.5"/>
         </scene>
         <!--Draw View Controller-->
         <scene sceneID="zbB-u2-Utd">
@@ -107,21 +107,12 @@
                         <viewControllerLayoutGuide type="bottom" id="nlp-Mc-Uzi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Q72-Zt-m4a">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gYn-8b-SlE" customClass="SmoothedBIView">
-                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKg-w9-7qT">
-                                        <rect key="frame" x="510" y="8" width="50" height="30"/>
-                                        <state key="normal" title="Save">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="done:" destination="RED-li-3oE" eventType="touchUpInside" id="id4-lR-HQD"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsX-ox-nOo">
                                         <rect key="frame" x="8" y="8" width="50" height="30"/>
                                         <state key="normal" title="Undo">
@@ -132,16 +123,25 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwW-qe-Gzc">
-                                        <rect key="frame" x="66" y="8" width="436" height="30"/>
+                                        <rect key="frame" x="33" y="8" width="255" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwO-Ly-fHz">
-                                        <rect key="frame" x="14" y="282" width="34" height="30"/>
+                                        <rect key="frame" x="8" y="530" width="34" height="30"/>
                                         <state key="normal" title="Back"/>
                                         <connections>
                                             <action selector="back:" destination="RED-li-3oE" eventType="touchUpInside" id="vS4-sp-QfS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKg-w9-7qT">
+                                        <rect key="frame" x="210" y="0.0" width="110" height="41.5"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="done:" destination="RED-li-3oE" eventType="touchUpInside" id="id4-lR-HQD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -149,11 +149,10 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="AwO-Ly-fHz" secondAttribute="bottom" constant="8" id="4cW-La-qPE"/>
                                     <constraint firstItem="AwO-Ly-fHz" firstAttribute="leading" secondItem="gYn-8b-SlE" secondAttribute="leading" constant="8" id="8qG-EU-0E9"/>
-                                    <constraint firstAttribute="width" constant="667" id="9PX-1E-GGS"/>
+                                    <constraint firstAttribute="top" secondItem="uKg-w9-7qT" secondAttribute="top" constant="-15" id="Cxp-zA-vth"/>
                                     <constraint firstItem="vsX-ox-nOo" firstAttribute="leading" secondItem="gYn-8b-SlE" secondAttribute="leading" constant="8" id="HDo-sQ-wVa"/>
+                                    <constraint firstItem="vsX-ox-nOo" firstAttribute="top" secondItem="gYn-8b-SlE" secondAttribute="top" constant="15" id="IlI-7I-YaH"/>
                                     <constraint firstItem="kwW-qe-Gzc" firstAttribute="centerX" secondItem="gYn-8b-SlE" secondAttribute="centerX" id="Tfh-5P-wr4"/>
-                                    <constraint firstAttribute="height" constant="375" id="qmB-Ym-aw3"/>
-                                    <constraint firstAttribute="trailing" secondItem="uKg-w9-7qT" secondAttribute="trailing" constant="8" id="w0U-hY-FA3"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -162,7 +161,7 @@
                     <toolbarItems/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="backButtonOut" destination="vsX-ox-nOo" id="ZrF-Ps-3kQ"/>
@@ -173,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tJd-V4-Td1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="608" y="1315"/>
+            <point key="canvasLocation" x="712" y="1454"/>
         </scene>
         <!--Done View Controller-->
         <scene sceneID="2bj-dg-AjB">
@@ -184,13 +183,13 @@
                         <viewControllerLayoutGuide type="bottom" id="Sf8-ud-CQR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="97V-9i-8BU">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7c-ql-hRh">
-                                <rect key="frame" x="74" y="20" width="420" height="34"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwX-EU-1ef">
@@ -202,7 +201,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKt-SN-43f">
-                                <rect key="frame" x="197" y="241" width="174" height="59"/>
+                                <rect key="frame" x="73" y="238" width="174" height="59"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="MENU">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -215,7 +214,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="backOut" destination="UwX-EU-1ef" id="vxR-15-zJM"/>
@@ -225,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7F-6R-DDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="840" y="1811"/>
+            <point key="canvasLocation" x="914" y="2290"/>
         </scene>
     </scenes>
 </document>

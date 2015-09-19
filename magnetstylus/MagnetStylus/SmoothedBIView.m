@@ -99,9 +99,13 @@ self.mag = [[UILabel alloc ]initWithFrame:CGRectMake(0, 200, 200, 50)];
 	
 	CGSize screenSize = [UIScreen mainScreen].bounds.size;
 	
+//    newFrame.origin = CGPointMake(
+//                                  ((cos(self.magnet.angle) * self.magnet.radius)),
+//                                  ((sin(self.magnet.angle) * self.magnet.radius))-200);
+    
     newFrame.origin = CGPointMake(
                                   ((cos(self.magnet.angle) * self.magnet.radius)),
-                                  ((sin(self.magnet.angle) * self.magnet.radius))-200);
+                                  ((sin(self.magnet.angle) * self.magnet.radius)-200));
     
 	self.cursorView.frame = newFrame;
 	

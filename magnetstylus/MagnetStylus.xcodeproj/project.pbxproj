@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A7FE2CC1A69FB4A00D5EE72 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7FE2CB1A69FB4A00D5EE72 /* HomeViewController.m */; };
-		0A7FE2CF1A69FB6000D5EE72 /* MagnetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7FE2CE1A69FB6000D5EE72 /* MagnetViewController.m */; };
 		0A8CF3651A6A293F005099AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8CF3641A6A293F005099AA /* CoreGraphics.framework */; };
 		0A8CF36A1A6A2A91005099AA /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8CF3691A6A2A91005099AA /* DrawViewController.m */; };
 		0A8CF36D1A6A42C2005099AA /* SmoothedBIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8CF36C1A6A42C2005099AA /* SmoothedBIView.m */; };
@@ -41,8 +40,6 @@
 /* Begin PBXFileReference section */
 		0A7FE2CA1A69FB4A00D5EE72 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		0A7FE2CB1A69FB4A00D5EE72 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		0A7FE2CD1A69FB6000D5EE72 /* MagnetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnetViewController.h; sourceTree = "<group>"; };
-		0A7FE2CE1A69FB6000D5EE72 /* MagnetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnetViewController.m; sourceTree = "<group>"; };
 		0A8CF3641A6A293F005099AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0A8CF3681A6A2A91005099AA /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
 		0A8CF3691A6A2A91005099AA /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
@@ -122,8 +119,6 @@
 				5E8E70B51A69EAB6001340A4 /* AppDelegate.m */,
 				0A7FE2CA1A69FB4A00D5EE72 /* HomeViewController.h */,
 				0A7FE2CB1A69FB4A00D5EE72 /* HomeViewController.m */,
-				0A7FE2CD1A69FB6000D5EE72 /* MagnetViewController.h */,
-				0A7FE2CE1A69FB6000D5EE72 /* MagnetViewController.m */,
 				0AAAA7E31A6A499000B52BFC /* MenuViewController.h */,
 				0AAAA7E41A6A499000B52BFC /* MenuViewController.m */,
 				0A8CF3681A6A2A91005099AA /* DrawViewController.h */,
@@ -232,6 +227,7 @@
 				TargetAttributes = {
 					5E8E70AC1A69EAB6001340A4 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = K68L32QYS3;
 					};
 					5E8E70C51A69EAB6001340A4 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -285,7 +281,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCAC108C1A6A20760069C35D /* Magnet.m in Sources */,
-				0A7FE2CF1A69FB6000D5EE72 /* MagnetViewController.m in Sources */,
 				0AD226F81A6B131E00F9F9F1 /* DoneViewController.m in Sources */,
 				0A8CF36A1A6A2A91005099AA /* DrawViewController.m in Sources */,
 				0AAAA7E51A6A499000B52BFC /* MenuViewController.m in Sources */,
@@ -416,6 +411,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FacebookSDK",
@@ -425,6 +422,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -432,6 +430,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FacebookSDK",
@@ -441,6 +441,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

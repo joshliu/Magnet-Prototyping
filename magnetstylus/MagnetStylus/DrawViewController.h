@@ -12,7 +12,7 @@
 
 @interface DrawViewController : UIViewController 
 
-@property (strong, nonatomic) IBOutlet UILabel *menuTitle;
+@property (strong, nonatomic) IBOutlet UITextView *menuTitle;
 @property (strong, nonatomic) IBOutlet UIButton *backButtonOut;
 @property (strong, nonatomic) IBOutlet UIButton *saveButtonOut;
 @property (strong,nonatomic) NSString *drawingIdentifier;
