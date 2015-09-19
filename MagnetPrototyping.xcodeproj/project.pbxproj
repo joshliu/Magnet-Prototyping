@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03DF14C21BAD17E7007DBE4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF14C11BAD17E7007DBE4E /* AppDelegate.swift */; };
+		03DF14C41BAD17E7007DBE4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF14C31BAD17E7007DBE4E /* ViewController.swift */; };
+		03DF14C71BAD17E7007DBE4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DF14C51BAD17E7007DBE4E /* Main.storyboard */; };
+		03DF14CA1BAD17E7007DBE4E /* MagnetPrototyping.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03DF14C81BAD17E7007DBE4E /* MagnetPrototyping.xcdatamodeld */; };
+		03DF14CC1BAD17E7007DBE4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DF14CB1BAD17E7007DBE4E /* Assets.xcassets */; };
+		03DF14CF1BAD17E7007DBE4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DF14CD1BAD17E7007DBE4E /* LaunchScreen.storyboard */; };
+		03DF14DA1BAD17E7007DBE4E /* MagnetPrototypingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF14D91BAD17E7007DBE4E /* MagnetPrototypingTests.swift */; };
+		03DF14E51BAD17E7007DBE4E /* MagnetPrototypingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DF14E41BAD17E7007DBE4E /* MagnetPrototypingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03DF14D61BAD17E7007DBE4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03DF14B61BAD17E7007DBE4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03DF14BD1BAD17E7007DBE4E;
+			remoteInfo = MagnetPrototyping;
+		};
+		03DF14E11BAD17E7007DBE4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03DF14B61BAD17E7007DBE4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03DF14BD1BAD17E7007DBE4E;
+			remoteInfo = MagnetPrototyping;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03DF14BE1BAD17E7007DBE4E /* MagnetPrototyping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagnetPrototyping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DF14C11BAD17E7007DBE4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03DF14C31BAD17E7007DBE4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03DF14C61BAD17E7007DBE4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03DF14C91BAD17E7007DBE4E /* MagnetPrototyping.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MagnetPrototyping.xcdatamodel; sourceTree = "<group>"; };
+		03DF14CB1BAD17E7007DBE4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03DF14CE1BAD17E7007DBE4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03DF14D01BAD17E7007DBE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03DF14D51BAD17E7007DBE4E /* MagnetPrototypingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnetPrototypingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DF14D91BAD17E7007DBE4E /* MagnetPrototypingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetPrototypingTests.swift; sourceTree = "<group>"; };
+		03DF14DB1BAD17E7007DBE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03DF14E01BAD17E7007DBE4E /* MagnetPrototypingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnetPrototypingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DF14E41BAD17E7007DBE4E /* MagnetPrototypingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetPrototypingUITests.swift; sourceTree = "<group>"; };
+		03DF14E61BAD17E7007DBE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03DF14BB1BAD17E7007DBE4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DF14D21BAD17E7007DBE4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DF14DD1BAD17E7007DBE4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03DF14B51BAD17E7007DBE4E = {
+			isa = PBXGroup;
+			children = (
+				03DF14C01BAD17E7007DBE4E /* MagnetPrototyping */,
+				03DF14D81BAD17E7007DBE4E /* MagnetPrototypingTests */,
+				03DF14E31BAD17E7007DBE4E /* MagnetPrototypingUITests */,
+				03DF14BF1BAD17E7007DBE4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03DF14BF1BAD17E7007DBE4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03DF14BE1BAD17E7007DBE4E /* MagnetPrototyping.app */,
+				03DF14D51BAD17E7007DBE4E /* MagnetPrototypingTests.xctest */,
+				03DF14E01BAD17E7007DBE4E /* MagnetPrototypingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03DF14C01BAD17E7007DBE4E /* MagnetPrototyping */ = {
+			isa = PBXGroup;
+			children = (
+				03DF14C11BAD17E7007DBE4E /* AppDelegate.swift */,
+				03DF14C31BAD17E7007DBE4E /* ViewController.swift */,
+				03DF14C51BAD17E7007DBE4E /* Main.storyboard */,
+				03DF14CB1BAD17E7007DBE4E /* Assets.xcassets */,
+				03DF14CD1BAD17E7007DBE4E /* LaunchScreen.storyboard */,
+				03DF14D01BAD17E7007DBE4E /* Info.plist */,
+				03DF14C81BAD17E7007DBE4E /* MagnetPrototyping.xcdatamodeld */,
+			);
+			path = MagnetPrototyping;
+			sourceTree = "<group>";
+		};
+		03DF14D81BAD17E7007DBE4E /* MagnetPrototypingTests */ = {
+			isa = PBXGroup;
+			children = (
+				03DF14D91BAD17E7007DBE4E /* MagnetPrototypingTests.swift */,
+				03DF14DB1BAD17E7007DBE4E /* Info.plist */,
+			);
+			path = MagnetPrototypingTests;
+			sourceTree = "<group>";
+		};
+		03DF14E31BAD17E7007DBE4E /* MagnetPrototypingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03DF14E41BAD17E7007DBE4E /* MagnetPrototypingUITests.swift */,
+				03DF14E61BAD17E7007DBE4E /* Info.plist */,
+			);
+			path = MagnetPrototypingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03DF14BD1BAD17E7007DBE4E /* MagnetPrototyping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03DF14E91BAD17E8007DBE4E /* Build configuration list for PBXNativeTarget "MagnetPrototyping" */;
+			buildPhases = (
+				03DF14BA1BAD17E7007DBE4E /* Sources */,
+				03DF14BB1BAD17E7007DBE4E /* Frameworks */,
+				03DF14BC1BAD17E7007DBE4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagnetPrototyping;
+			productName = MagnetPrototyping;
+			productReference = 03DF14BE1BAD17E7007DBE4E /* MagnetPrototyping.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03DF14D41BAD17E7007DBE4E /* MagnetPrototypingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03DF14EC1BAD17E8007DBE4E /* Build configuration list for PBXNativeTarget "MagnetPrototypingTests" */;
+			buildPhases = (
+				03DF14D11BAD17E7007DBE4E /* Sources */,
+				03DF14D21BAD17E7007DBE4E /* Frameworks */,
+				03DF14D31BAD17E7007DBE4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03DF14D71BAD17E7007DBE4E /* PBXTargetDependency */,
+			);
+			name = MagnetPrototypingTests;
+			productName = MagnetPrototypingTests;
+			productReference = 03DF14D51BAD17E7007DBE4E /* MagnetPrototypingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03DF14DF1BAD17E7007DBE4E /* MagnetPrototypingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03DF14EF1BAD17E8007DBE4E /* Build configuration list for PBXNativeTarget "MagnetPrototypingUITests" */;
+			buildPhases = (
+				03DF14DC1BAD17E7007DBE4E /* Sources */,
+				03DF14DD1BAD17E7007DBE4E /* Frameworks */,
+				03DF14DE1BAD17E7007DBE4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03DF14E21BAD17E7007DBE4E /* PBXTargetDependency */,
+			);
+			name = MagnetPrototypingUITests;
+			productName = MagnetPrototypingUITests;
+			productReference = 03DF14E01BAD17E7007DBE4E /* MagnetPrototypingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03DF14B61BAD17E7007DBE4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Joshua Liu";
+				TargetAttributes = {
+					03DF14BD1BAD17E7007DBE4E = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					03DF14D41BAD17E7007DBE4E = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 03DF14BD1BAD17E7007DBE4E;
+					};
+					03DF14DF1BAD17E7007DBE4E = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 03DF14BD1BAD17E7007DBE4E;
+					};
+				};
+			};
+			buildConfigurationList = 03DF14B91BAD17E7007DBE4E /* Build configuration list for PBXProject "MagnetPrototyping" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03DF14B51BAD17E7007DBE4E;
+			productRefGroup = 03DF14BF1BAD17E7007DBE4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03DF14BD1BAD17E7007DBE4E /* MagnetPrototyping */,
+				03DF14D41BAD17E7007DBE4E /* MagnetPrototypingTests */,
+				03DF14DF1BAD17E7007DBE4E /* MagnetPrototypingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03DF14BC1BAD17E7007DBE4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DF14CF1BAD17E7007DBE4E /* LaunchScreen.storyboard in Resources */,
+				03DF14CC1BAD17E7007DBE4E /* Assets.xcassets in Resources */,
+				03DF14C71BAD17E7007DBE4E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DF14D31BAD17E7007DBE4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DF14DE1BAD17E7007DBE4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03DF14BA1BAD17E7007DBE4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DF14C41BAD17E7007DBE4E /* ViewController.swift in Sources */,
+				03DF14C21BAD17E7007DBE4E /* AppDelegate.swift in Sources */,
+				03DF14CA1BAD17E7007DBE4E /* MagnetPrototyping.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DF14D11BAD17E7007DBE4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DF14DA1BAD17E7007DBE4E /* MagnetPrototypingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DF14DC1BAD17E7007DBE4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DF14E51BAD17E7007DBE4E /* MagnetPrototypingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03DF14D71BAD17E7007DBE4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03DF14BD1BAD17E7007DBE4E /* MagnetPrototyping */;
+			targetProxy = 03DF14D61BAD17E7007DBE4E /* PBXContainerItemProxy */;
+		};
+		03DF14E21BAD17E7007DBE4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03DF14BD1BAD17E7007DBE4E /* MagnetPrototyping */;
+			targetProxy = 03DF14E11BAD17E7007DBE4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03DF14C51BAD17E7007DBE4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03DF14C61BAD17E7007DBE4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03DF14CD1BAD17E7007DBE4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03DF14CE1BAD17E7007DBE4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03DF14E71BAD17E8007DBE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03DF14E81BAD17E8007DBE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03DF14EA1BAD17E8007DBE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MagnetPrototyping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.joshliu.MagnetPrototyping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		03DF14EB1BAD17E8007DBE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MagnetPrototyping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.joshliu.MagnetPrototyping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		03DF14ED1BAD17E8007DBE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MagnetPrototypingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.joshliu.MagnetPrototypingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagnetPrototyping.app/MagnetPrototyping";
+			};
+			name = Debug;
+		};
+		03DF14EE1BAD17E8007DBE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MagnetPrototypingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.joshliu.MagnetPrototypingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagnetPrototyping.app/MagnetPrototyping";
+			};
+			name = Release;
+		};
+		03DF14F01BAD17E8007DBE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MagnetPrototypingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.joshliu.MagnetPrototypingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MagnetPrototyping;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		03DF14F11BAD17E8007DBE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MagnetPrototypingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.joshliu.MagnetPrototypingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MagnetPrototyping;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03DF14B91BAD17E7007DBE4E /* Build configuration list for PBXProject "MagnetPrototyping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DF14E71BAD17E8007DBE4E /* Debug */,
+				03DF14E81BAD17E8007DBE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03DF14E91BAD17E8007DBE4E /* Build configuration list for PBXNativeTarget "MagnetPrototyping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DF14EA1BAD17E8007DBE4E /* Debug */,
+				03DF14EB1BAD17E8007DBE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		03DF14EC1BAD17E8007DBE4E /* Build configuration list for PBXNativeTarget "MagnetPrototypingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DF14ED1BAD17E8007DBE4E /* Debug */,
+				03DF14EE1BAD17E8007DBE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		03DF14EF1BAD17E8007DBE4E /* Build configuration list for PBXNativeTarget "MagnetPrototypingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DF14F01BAD17E8007DBE4E /* Debug */,
+				03DF14F11BAD17E8007DBE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		03DF14C81BAD17E7007DBE4E /* MagnetPrototyping.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03DF14C91BAD17E7007DBE4E /* MagnetPrototyping.xcdatamodel */,
+			);
+			currentVersion = 03DF14C91BAD17E7007DBE4E /* MagnetPrototyping.xcdatamodel */;
+			path = MagnetPrototyping.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 03DF14B61BAD17E7007DBE4E /* Project object */;
+}
