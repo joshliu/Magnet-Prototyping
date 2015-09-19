@@ -23,6 +23,7 @@
     NSMutableArray *paths;
     BOOL needsRedraw;
 	BOOL startedDrawing;
+    BOOL isDrawing;
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -49,6 +50,8 @@
 	[path setLineWidth:10.0];
 	paths = [NSMutableArray array];
 	
+    isDrawing = NO;
+    
 	needsRedraw = false;
 	
 	// set up magnet
@@ -106,9 +109,9 @@ self.mag = [[UILabel alloc ]initWithFrame:CGRectMake(0, 200, 200, 50)];
 	self.angle.text = [NSString stringWithFormat:@"Angle : %.1f",self.magnet.angle];
 	
 //    NSLog(@"%f",self.magnet.z);
-//    if (self.magnet.z > -500) {
-//        return;
-//    }
+    if (!isDrawing) {
+        return;
+    }
     if (startedDrawing != YES) {
 		[self beginPointsWithPoint:pointToAdd];
 		startedDrawing = YES;
@@ -212,13 +215,19 @@ self.mag = [[UILabel alloc ]initWithFrame:CGRectMake(0, 200, 200, 50)];
 }
 
 #pragma mark - Touches Drawing Method
-/*
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    ctr = 0;
-    UITouch *touch = [touches anyObject];
-    pts[0] = [touch locationInView:self];
+    if (isDrawing) {
+        isDrawing = NO;
+    } else {
+        startedDrawing = NO;
+        isDrawing = YES;
+    }
 }
+
+/*
+
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
