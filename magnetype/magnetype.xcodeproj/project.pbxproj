@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD6CF4091BAD40BA00A7C185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF4081BAD40BA00A7C185 /* AppDelegate.swift */; };
+		AD6CF40C1BAD40BA00A7C185 /* magnetype.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF40A1BAD40BA00A7C185 /* magnetype.xcdatamodeld */; };
+		AD6CF40E1BAD40BA00A7C185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF40D1BAD40BA00A7C185 /* ViewController.swift */; };
+		AD6CF4111BAD40BA00A7C185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6CF40F1BAD40BA00A7C185 /* Main.storyboard */; };
+		AD6CF4131BAD40BA00A7C185 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6CF4121BAD40BA00A7C185 /* Images.xcassets */; };
+		AD6CF4161BAD40BA00A7C185 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6CF4141BAD40BA00A7C185 /* LaunchScreen.xib */; };
+		AD6CF4221BAD40BA00A7C185 /* magnetypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF4211BAD40BA00A7C185 /* magnetypeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD6CF41C1BAD40BA00A7C185 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD6CF3FB1BAD40BA00A7C185 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD6CF4021BAD40BA00A7C185;
+			remoteInfo = magnetype;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD6CF4031BAD40BA00A7C185 /* magnetype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magnetype.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6CF4071BAD40BA00A7C185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6CF4081BAD40BA00A7C185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD6CF40B1BAD40BA00A7C185 /* magnetype.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = magnetype.xcdatamodel; sourceTree = "<group>"; };
+		AD6CF40D1BAD40BA00A7C185 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD6CF4101BAD40BA00A7C185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD6CF4121BAD40BA00A7C185 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD6CF4151BAD40BA00A7C185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AD6CF41B1BAD40BA00A7C185 /* magnetypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magnetypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6CF4201BAD40BA00A7C185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6CF4211BAD40BA00A7C185 /* magnetypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magnetypeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD6CF4001BAD40BA00A7C185 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6CF4181BAD40BA00A7C185 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD6CF3FA1BAD40BA00A7C185 = {
+			isa = PBXGroup;
+			children = (
+				AD6CF4051BAD40BA00A7C185 /* magnetype */,
+				AD6CF41E1BAD40BA00A7C185 /* magnetypeTests */,
+				AD6CF4041BAD40BA00A7C185 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD6CF4041BAD40BA00A7C185 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD6CF4031BAD40BA00A7C185 /* magnetype.app */,
+				AD6CF41B1BAD40BA00A7C185 /* magnetypeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD6CF4051BAD40BA00A7C185 /* magnetype */ = {
+			isa = PBXGroup;
+			children = (
+				AD6CF4081BAD40BA00A7C185 /* AppDelegate.swift */,
+				AD6CF40D1BAD40BA00A7C185 /* ViewController.swift */,
+				AD6CF40F1BAD40BA00A7C185 /* Main.storyboard */,
+				AD6CF4121BAD40BA00A7C185 /* Images.xcassets */,
+				AD6CF4141BAD40BA00A7C185 /* LaunchScreen.xib */,
+				AD6CF40A1BAD40BA00A7C185 /* magnetype.xcdatamodeld */,
+				AD6CF4061BAD40BA00A7C185 /* Supporting Files */,
+			);
+			path = magnetype;
+			sourceTree = "<group>";
+		};
+		AD6CF4061BAD40BA00A7C185 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD6CF4071BAD40BA00A7C185 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD6CF41E1BAD40BA00A7C185 /* magnetypeTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD6CF4211BAD40BA00A7C185 /* magnetypeTests.swift */,
+				AD6CF41F1BAD40BA00A7C185 /* Supporting Files */,
+			);
+			path = magnetypeTests;
+			sourceTree = "<group>";
+		};
+		AD6CF41F1BAD40BA00A7C185 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD6CF4201BAD40BA00A7C185 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD6CF4021BAD40BA00A7C185 /* magnetype */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD6CF4251BAD40BA00A7C185 /* Build configuration list for PBXNativeTarget "magnetype" */;
+			buildPhases = (
+				AD6CF3FF1BAD40BA00A7C185 /* Sources */,
+				AD6CF4001BAD40BA00A7C185 /* Frameworks */,
+				AD6CF4011BAD40BA00A7C185 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = magnetype;
+			productName = magnetype;
+			productReference = AD6CF4031BAD40BA00A7C185 /* magnetype.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD6CF41A1BAD40BA00A7C185 /* magnetypeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD6CF4281BAD40BA00A7C185 /* Build configuration list for PBXNativeTarget "magnetypeTests" */;
+			buildPhases = (
+				AD6CF4171BAD40BA00A7C185 /* Sources */,
+				AD6CF4181BAD40BA00A7C185 /* Frameworks */,
+				AD6CF4191BAD40BA00A7C185 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD6CF41D1BAD40BA00A7C185 /* PBXTargetDependency */,
+			);
+			name = magnetypeTests;
+			productName = magnetypeTests;
+			productReference = AD6CF41B1BAD40BA00A7C185 /* magnetypeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD6CF3FB1BAD40BA00A7C185 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Team Goat";
+				TargetAttributes = {
+					AD6CF4021BAD40BA00A7C185 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					AD6CF41A1BAD40BA00A7C185 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = AD6CF4021BAD40BA00A7C185;
+					};
+				};
+			};
+			buildConfigurationList = AD6CF3FE1BAD40BA00A7C185 /* Build configuration list for PBXProject "magnetype" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD6CF3FA1BAD40BA00A7C185;
+			productRefGroup = AD6CF4041BAD40BA00A7C185 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD6CF4021BAD40BA00A7C185 /* magnetype */,
+				AD6CF41A1BAD40BA00A7C185 /* magnetypeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD6CF4011BAD40BA00A7C185 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6CF4111BAD40BA00A7C185 /* Main.storyboard in Resources */,
+				AD6CF4161BAD40BA00A7C185 /* LaunchScreen.xib in Resources */,
+				AD6CF4131BAD40BA00A7C185 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6CF4191BAD40BA00A7C185 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD6CF3FF1BAD40BA00A7C185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6CF40E1BAD40BA00A7C185 /* ViewController.swift in Sources */,
+				AD6CF40C1BAD40BA00A7C185 /* magnetype.xcdatamodeld in Sources */,
+				AD6CF4091BAD40BA00A7C185 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6CF4171BAD40BA00A7C185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6CF4221BAD40BA00A7C185 /* magnetypeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD6CF41D1BAD40BA00A7C185 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD6CF4021BAD40BA00A7C185 /* magnetype */;
+			targetProxy = AD6CF41C1BAD40BA00A7C185 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD6CF40F1BAD40BA00A7C185 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD6CF4101BAD40BA00A7C185 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD6CF4141BAD40BA00A7C185 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD6CF4151BAD40BA00A7C185 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD6CF4231BAD40BA00A7C185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD6CF4241BAD40BA00A7C185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD6CF4261BAD40BA00A7C185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = magnetype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AD6CF4271BAD40BA00A7C185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = magnetype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AD6CF4291BAD40BA00A7C185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = magnetypeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magnetype.app/magnetype";
+			};
+			name = Debug;
+		};
+		AD6CF42A1BAD40BA00A7C185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = magnetypeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magnetype.app/magnetype";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD6CF3FE1BAD40BA00A7C185 /* Build configuration list for PBXProject "magnetype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6CF4231BAD40BA00A7C185 /* Debug */,
+				AD6CF4241BAD40BA00A7C185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD6CF4251BAD40BA00A7C185 /* Build configuration list for PBXNativeTarget "magnetype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6CF4261BAD40BA00A7C185 /* Debug */,
+				AD6CF4271BAD40BA00A7C185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD6CF4281BAD40BA00A7C185 /* Build configuration list for PBXNativeTarget "magnetypeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6CF4291BAD40BA00A7C185 /* Debug */,
+				AD6CF42A1BAD40BA00A7C185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD6CF40A1BAD40BA00A7C185 /* magnetype.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD6CF40B1BAD40BA00A7C185 /* magnetype.xcdatamodel */,
+			);
+			currentVersion = AD6CF40B1BAD40BA00A7C185 /* magnetype.xcdatamodel */;
+			path = magnetype.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AD6CF3FB1BAD40BA00A7C185 /* Project object */;
+}
