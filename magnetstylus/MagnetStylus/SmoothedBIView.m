@@ -49,7 +49,13 @@
 	path = [UIBezierPath bezierPath];
 	[path setLineWidth:10.0];
 	paths = [NSMutableArray array];
-	
+    
+    //    [NSTimer scheduledTimerWithTimeInterval:2.0
+    //                                     target:self
+    //                                   selector:@selector(targetMethod:)
+    //                                   userInfo:nil
+    //                                    repeats:NO];
+    
     isDrawing = NO;
     
 
