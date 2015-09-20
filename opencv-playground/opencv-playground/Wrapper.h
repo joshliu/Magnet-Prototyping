@@ -1,18 +1,19 @@
 //
 //  Wrapper.h
-//  Draculapp
+//  opencv-playground
 //
-//  Created by Avery Lamp on 9/4/15.
-//  Copyright (c) 2015 magicmark. All rights reserved.
+//  Created by Antonio Marino on 9/19/15.
+//  Copyright (c) 2015 Team Goat. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class ViewController;
+
 @interface Wrapper : NSObject
 
-
-+(NSArray*)processImage:(UIImage*)image;
++(UIImage*)processImage:(UIImage*)image withVC:(ViewController*)instance;
 
 
 

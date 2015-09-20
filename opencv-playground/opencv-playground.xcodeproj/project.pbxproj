@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		AD6CF3D51BAD3E9D00A7C185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF3D41BAD3E9D00A7C185 /* AppDelegate.swift */; };
 		AD6CF3D71BAD3E9D00A7C185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF3D61BAD3E9D00A7C185 /* ViewController.swift */; };
-		AD6CF3DA1BAD3E9D00A7C185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6CF3D81BAD3E9D00A7C185 /* Main.storyboard */; };
 		AD6CF3DC1BAD3E9D00A7C185 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6CF3DB1BAD3E9D00A7C185 /* Images.xcassets */; };
 		AD6CF3DF1BAD3E9D00A7C185 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6CF3DD1BAD3E9D00A7C185 /* LaunchScreen.xib */; };
 		AD6CF3EB1BAD3E9D00A7C185 /* opencv_playgroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF3EA1BAD3E9D00A7C185 /* opencv_playgroundTests.swift */; };
 		AD6CF3F71BAD3EB900A7C185 /* Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF3F61BAD3EB900A7C185 /* Wrapper.mm */; };
 		AD6CF3F91BAD3F0100A7C185 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6CF3F81BAD3F0100A7C185 /* opencv2.framework */; };
+		AD6CF42F1BAD57EC00A7C185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6CF42D1BAD57EC00A7C185 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +32,6 @@
 		AD6CF3D31BAD3E9D00A7C185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD6CF3D41BAD3E9D00A7C185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD6CF3D61BAD3E9D00A7C185 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AD6CF3D91BAD3E9D00A7C185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD6CF3DB1BAD3E9D00A7C185 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AD6CF3DE1BAD3E9D00A7C185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AD6CF3E41BAD3E9D00A7C185 /* opencv-playgroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "opencv-playgroundTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +41,7 @@
 		AD6CF3F51BAD3EB900A7C185 /* Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wrapper.h; sourceTree = "<group>"; };
 		AD6CF3F61BAD3EB900A7C185 /* Wrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Wrapper.mm; sourceTree = "<group>"; };
 		AD6CF3F81BAD3F0100A7C185 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		AD6CF42E1BAD57EC00A7C185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,11 +85,11 @@
 		AD6CF3D11BAD3E9D00A7C185 /* opencv-playground */ = {
 			isa = PBXGroup;
 			children = (
+				AD6CF42D1BAD57EC00A7C185 /* Main.storyboard */,
 				AD6CF3D41BAD3E9D00A7C185 /* AppDelegate.swift */,
 				AD6CF3D61BAD3E9D00A7C185 /* ViewController.swift */,
 				AD6CF3F51BAD3EB900A7C185 /* Wrapper.h */,
 				AD6CF3F61BAD3EB900A7C185 /* Wrapper.mm */,
-				AD6CF3D81BAD3E9D00A7C185 /* Main.storyboard */,
 				AD6CF3DB1BAD3E9D00A7C185 /* Images.xcassets */,
 				AD6CF3DD1BAD3E9D00A7C185 /* LaunchScreen.xib */,
 				AD6CF3D21BAD3E9D00A7C185 /* Supporting Files */,
@@ -203,9 +203,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD6CF3DA1BAD3E9D00A7C185 /* Main.storyboard in Resources */,
 				AD6CF3DF1BAD3E9D00A7C185 /* LaunchScreen.xib in Resources */,
 				AD6CF3DC1BAD3E9D00A7C185 /* Images.xcassets in Resources */,
+				AD6CF42F1BAD57EC00A7C185 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,20 +248,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AD6CF3D81BAD3E9D00A7C185 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD6CF3D91BAD3E9D00A7C185 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AD6CF3DD1BAD3E9D00A7C185 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AD6CF3DE1BAD3E9D00A7C185 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		AD6CF42D1BAD57EC00A7C185 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD6CF42E1BAD57EC00A7C185 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -434,6 +434,7 @@
 				AD6CF3F01BAD3E9D00A7C185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD6CF3F11BAD3E9D00A7C185 /* Build configuration list for PBXNativeTarget "opencv-playgroundTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +443,7 @@
 				AD6CF3F31BAD3E9D00A7C185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

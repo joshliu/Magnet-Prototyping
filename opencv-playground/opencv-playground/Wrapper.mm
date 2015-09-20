@@ -1,21 +1,27 @@
 //
 //  Wrapper.m
-//  Draculapp
+//  opencv-playground
 //
-//  Created by Avery Lamp on 9/4/15.
-//  Copyright (c) 2015 magicmark. All rights reserved.
+//  Created by Antonio Marino on 9/19/15.
+//  Copyright (c) 2015 Team Goat. All rights reserved.
 //
 
 #import "Wrapper.h"
+#import <opencv2/opencv.hpp>
 #import <opencv2/highgui/highgui_c.h>
 #import <opencv2/imgproc/imgproc_c.h>
 #import <opencv2/core/core_c.h>
 #import <vector>
+#import <unordered_map>
+#import "opencv_playground-Swift.h"
+
 
 using std::vector;
 using namespace cv;
 
 static UIImage *resultingImage = nil;
+
+static std::unordered_map<int, UIView*> rectsMap;
 
 @implementation Wrapper
 static UIImage* cvMatToUIImage(const cv::Mat& m) {
@@ -44,7 +50,111 @@ static void cvUIImageToMat(const UIImage* image, cv::Mat& m) {
     //    CGColorSpaceRelease(colorSpace);
 }
 
-+(NSArray*)processImage:(UIImage*)image{
-    return nil;
++(UIImage*)processImage:(UIImage*)image withVC:(ViewController*)instance {
+    cv::Mat img;
+    cv::Mat resultImg;
+    cvUIImageToMat(image, img);
+    cvUIImageToMat(image, resultImg);
+    //resultImg = cvMatGrayFromUIImage(image);
+    
+    cv::cvtColor(img, resultImg, COLOR_BGR2GRAY);
+    cv::threshold(resultImg, resultImg, 128, 255, THRESH_BINARY);
+
+    //cv::Canny(resultImg, resultImg, 100, 110);
+    
+    vector<vector<cv::Point>> contours;
+    vector<cv::Rect> rectangles;
+    vector<Vec4i> hierarchy;
+
+    //cv::bitwise_not(resultImg, resultImg);
+    cv::findContours(resultImg, contours, hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE);
+    
+    int biggestArea = -1;
+    cv::Rect biggestRect;
+    
+    for (int i = 1; i < contours.size(); i++) {
+        //cv::drawContours(resultImg, contours, i, cv::Scalar(arc4random() % 255,arc4random() % 255,arc4random() % 255), 2);
+        cv::approxPolyDP(contours[i], contours[i], 0.03*cv::arcLength(contours[i], true), true);
+        cv::Rect rect = cv::boundingRect(contours[i]);
+        int firstChildIndex = hierarchy[i][2];
+        if (firstChildIndex >= 0) {
+            cv::Rect childRect = cv::boundingRect(contours[firstChildIndex]);
+            if (rect.area() < childRect.area() + 300) {
+                continue;
+            }
+        }
+
+        NSLog(@"sizenow: %d", rect.area());
+        if (rect.area() > biggestArea) {
+            NSLog(@"%d", biggestArea);
+            biggestArea = rect.area();
+            biggestRect = rect;
+            NSLog(@"%d", biggestArea);
+        } else if (rect.area() < 300) {
+            // do nothing for very small rects
+        }
+        rectangles.push_back(rect);
+        cv::rectangle(resultImg, rect, cvScalar(255,255,255), 1);
+    }
+    //return cvMatToUIImage(resultImg);
+    //cv::Rect rc = cv::boundingRect(contours[contours.size()-1]);
+
+    //cv::cvtColor(resultImg, resultImg, CV_BGR2GRAY);
+    
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+    
+    for (int i = 0; i < rectangles.size(); i++) {
+
+        if (rectsMap.find(rectangles[i].area()) != rectsMap.end()) {
+             //rectangle already there, do nothing
+        } else if (rectangles[i].area() == biggestArea) {
+            // do not draw
+            NSLog(@"asdf");
+        } else {
+            // new rectangle, track and create view
+            /*
+            if (is a button) {
+                UIButton *btn = [[UIButton alloc] init];
+                [btn setTitle:@"Button" forState:UIControlStateNormal];
+                CGRect btFrame = btn.frame;
+                btFrame.origin.x = 100;
+                btFrame.origin.y = 100;
+                btn.frame = btFrame;
+                [btn setBackgroundColor:[UIColor redColor]];
+                [btn sizeToFit];
+                [instance.view addSubview:btn];
+                //[instance.view insertSubview:btn atIndex:[[instance.view subviews] count]];
+            }
+            */
+            
+            CGRect rect = CGRectMake(0,0,//(CGFloat)(rectangles[i].tl().x - biggestRect.tl().x),
+                                     //(CGFloat)(rectangles[i].tl().y - biggestRect.tl().y),
+                                     (screenWidth*rectangles[i].width)/biggestRect.width,
+                                     (screenHeight*rectangles[i].height)/biggestRect.height);
+            
+            UIGraphicsBeginImageContext(rect.size);
+            CGContextRef context = UIGraphicsGetCurrentContext();
+            CGContextSetFillColorWithColor(context,
+                                           [[UIColor redColor] CGColor]);
+            CGContextFillRect(context, rect);
+            UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+            
+            UIImageView *imageView = [[UIImageView alloc] init];
+            imageView.image = img;
+            [imageView sizeToFit];
+            CGRect imgFrame = imageView.frame;
+            imgFrame.origin.x = (CGFloat)(rectangles[i].tl().x - biggestRect.tl().x);
+            imgFrame.origin.y = (CGFloat)(rectangles[i].tl().y - biggestRect.tl().y);
+            imageView.frame = imgFrame;
+            
+            [instance.view addSubview:imageView];
+            
+            rectsMap[rectangles[i].area()] = imageView;
+
+        }
+    }
+    return cvMatToUIImage(resultImg);
 }
 @end
