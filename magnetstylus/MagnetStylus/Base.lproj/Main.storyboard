@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--home-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="home" title="home" id="vXZ-lx-hvc" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="355"/>
+        </scene>
+        <!--magnet-->
+        <scene sceneID="eXK-O1-Vyq">
+            <objects>
+                <viewController storyboardIdentifier="magnet" title="magnet" id="YAh-fw-cMy" customClass="MagnetViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BKO-gD-Dzp"/>
+                        <viewControllerLayoutGuide type="bottom" id="FvT-Oe-wij"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nBh-K0-Hmd">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s0i-hf-oBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223" y="-203"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="ka3-Yd-jgD">
+            <objects>
+                <viewController storyboardIdentifier="menu" id="THn-HH-0bv" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WGR-8U-DrK"/>
+                        <viewControllerLayoutGuide type="bottom" id="ApB-4A-PXW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3UX-17-AW4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="HuU-yL-hdv">
+                                <rect key="frame" x="0.0" y="135" width="355" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d0b-kh-tRi">
+                                <rect key="frame" x="0.0" y="71" width="375" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T8A-lS-t4g">
+                                <rect key="frame" x="0.0" y="0.0" width="370" height="44"/>
+                                <items>
+                                    <navigationItem title="Menu" id="lOw-94-gU3">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="uIB-vx-KjY">
+                                            <connections>
+                                                <action selector="backButtonAct:" destination="THn-HH-0bv" id="XHJ-ST-Yfk"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backButtonOut" destination="uIB-vx-KjY" id="nEm-6V-YGN"/>
+                        <outlet property="drawings" destination="HuU-yL-hdv" id="PCO-7B-Rbe"/>
+                        <outlet property="menuBar" destination="T8A-lS-t4g" id="hYS-a6-hWC"/>
+                        <outlet property="menuTitle" destination="lOw-94-gU3" id="mBY-FK-FtT"/>
+                        <outlet property="nameEntry" destination="d0b-kh-tRi" id="WNg-na-SLM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="meS-bg-XK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257.5" y="953.5"/>
+        </scene>
+        <!--Draw View Controller-->
+        <scene sceneID="zbB-u2-Utd">
+            <objects>
+                <viewController storyboardIdentifier="draw" id="RED-li-3oE" customClass="DrawViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qna-dG-5sf"/>
+                        <viewControllerLayoutGuide type="bottom" id="nlp-Mc-Uzi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q72-Zt-m4a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gYn-8b-SlE" customClass="SmoothedBIView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsX-ox-nOo">
+                                        <rect key="frame" x="8" y="8" width="50" height="30"/>
+                                        <state key="normal" title="Undo">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="undo:" destination="RED-li-3oE" eventType="touchUpInside" id="d7E-BZ-V11"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwW-qe-Gzc">
+                                        <rect key="frame" x="33" y="8" width="255" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwO-Ly-fHz">
+                                        <rect key="frame" x="8" y="530" width="34" height="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="back:" destination="RED-li-3oE" eventType="touchUpInside" id="vS4-sp-QfS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKg-w9-7qT">
+                                        <rect key="frame" x="210" y="0.0" width="110" height="41.5"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="done:" destination="RED-li-3oE" eventType="touchUpInside" id="id4-lR-HQD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="AwO-Ly-fHz" secondAttribute="bottom" constant="8" id="4cW-La-qPE"/>
+                                    <constraint firstItem="AwO-Ly-fHz" firstAttribute="leading" secondItem="gYn-8b-SlE" secondAttribute="leading" constant="8" id="8qG-EU-0E9"/>
+                                    <constraint firstAttribute="top" secondItem="uKg-w9-7qT" secondAttribute="top" constant="-15" id="Cxp-zA-vth"/>
+                                    <constraint firstItem="vsX-ox-nOo" firstAttribute="leading" secondItem="gYn-8b-SlE" secondAttribute="leading" constant="8" id="HDo-sQ-wVa"/>
+                                    <constraint firstItem="vsX-ox-nOo" firstAttribute="top" secondItem="gYn-8b-SlE" secondAttribute="top" constant="15" id="IlI-7I-YaH"/>
+                                    <constraint firstItem="kwW-qe-Gzc" firstAttribute="centerX" secondItem="gYn-8b-SlE" secondAttribute="centerX" id="Tfh-5P-wr4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="backButtonOut" destination="vsX-ox-nOo" id="ZrF-Ps-3kQ"/>
+                        <outlet property="menuTitle" destination="kwW-qe-Gzc" id="a09-ar-3Cm"/>
+                        <outlet property="saveButtonOut" destination="uKg-w9-7qT" id="Vbb-O6-65d"/>
+                        <segue destination="THn-HH-0bv" kind="show" identifier="showMenu" id="Wmu-sE-7ZL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJd-V4-Td1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712" y="1454"/>
+        </scene>
+        <!--Done View Controller-->
+        <scene sceneID="2bj-dg-AjB">
+            <objects>
+                <viewController storyboardIdentifier="done" id="Z7g-9R-Lxo" customClass="DoneViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jSX-eQ-kRG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sf8-ud-CQR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="97V-9i-8BU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7c-ql-hRh">
+                                <rect key="frame" x="0.0" y="20" width="320" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwX-EU-1ef">
+                                <state key="normal" title="Undo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed" destination="Z7g-9R-Lxo" eventType="touchUpInside" id="sKu-O3-rJc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKt-SN-43f">
+                                <rect key="frame" x="73" y="238" width="174" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="MENU">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="homePressed" destination="Z7g-9R-Lxo" eventType="touchUpInside" id="iGI-EZ-kVj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="backOut" destination="UwX-EU-1ef" id="vxR-15-zJM"/>
+                        <outlet property="doneLabel" destination="n7c-ql-hRh" id="7QA-eS-SNf"/>
+                        <outlet property="homeOut" destination="WKt-SN-43f" id="swK-Ek-tmI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7F-6R-DDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="2290"/>
+        </scene>
+    </scenes>
+</document>
