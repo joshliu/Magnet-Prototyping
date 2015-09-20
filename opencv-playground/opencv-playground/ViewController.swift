@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         
         let screenSize = UIScreen.mainScreen().bounds.size
         
-        normalImage = UIImage(named: "Untitled-10")!
+        normalImage = UIImage(named: "Untitled-11-1")!
         
         image1.image = normalImage;
         

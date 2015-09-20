@@ -65,6 +65,7 @@ static void cvUIImageToMat(const UIImage* image, cv::Mat& m) {
     vector<vector<cv::Point>> contours;
     vector<cv::Rect> rectangles;
     vector<Vec4i> hierarchy;
+    std::unordered_map<int, int> typesForRectangles;
 
     //cv::bitwise_not(resultImg, resultImg);
     cv::findContours(resultImg, contours, hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE);
@@ -75,26 +76,36 @@ static void cvUIImageToMat(const UIImage* image, cv::Mat& m) {
     for (int i = 1; i < contours.size(); i++) {
         //cv::drawContours(resultImg, contours, i, cv::Scalar(arc4random() % 255,arc4random() % 255,arc4random() % 255), 2);
         cv::approxPolyDP(contours[i], contours[i], 0.03*cv::arcLength(contours[i], true), true);
-        cv::Rect rect = cv::boundingRect(contours[i]);
-        int firstChildIndex = hierarchy[i][2];
-        if (firstChildIndex >= 0) {
-            cv::Rect childRect = cv::boundingRect(contours[firstChildIndex]);
-            if (rect.area() < childRect.area() + 300) {
-                continue;
+        NSLog(@"contour size: %lu", contours[i].size());
+        if (contours[i].size() == 4) {
+            // it's a rectangle
+            cv::Rect rect = cv::boundingRect(contours[i]);
+            int firstChildIndex = hierarchy[i][2];
+            if (firstChildIndex >= 0) {
+                cv::Rect childRect = cv::boundingRect(contours[firstChildIndex]);
+                if (rect.area() < childRect.area() + 300) {
+                    continue;
+                }
             }
+            if (rect.area() > biggestArea) {
+                biggestArea = rect.area();
+                biggestRect = rect;
+            } else if (rect.area() < 300) {
+                // do nothing for very small rects
+            }
+            rectangles.push_back(rect);
+            cv::rectangle(resultImg, rect, cvScalar(255,255,255), 1);
+        }
+        else if (contours[i].size() > 15) {
+            // it's a circle
+            cv::Rect parent = cv::boundingRect(contours[hierarchy[i][3]]);
+            typesForRectangles[parent.area()] = 1;
+        } else if (contours[i].size() == 8 || contours[i].size() == 9) {
+            // half a circle
+            cv::Rect parent = cv::boundingRect(contours[hierarchy[i][3]]);
+            typesForRectangles[parent.area()] = 2;
         }
 
-        NSLog(@"sizenow: %d", rect.area());
-        if (rect.area() > biggestArea) {
-            NSLog(@"%d", biggestArea);
-            biggestArea = rect.area();
-            biggestRect = rect;
-            NSLog(@"%d", biggestArea);
-        } else if (rect.area() < 300) {
-            // do nothing for very small rects
-        }
-        rectangles.push_back(rect);
-        cv::rectangle(resultImg, rect, cvScalar(255,255,255), 1);
     }
     //return cvMatToUIImage(resultImg);
     //cv::Rect rc = cv::boundingRect(contours[contours.size()-1]);
@@ -113,20 +124,34 @@ static void cvUIImageToMat(const UIImage* image, cv::Mat& m) {
             NSLog(@"asdf");
         } else {
             // new rectangle, track and create view
-            /*
-            if (is a button) {
+            
+            if (typesForRectangles[rectangles[i].area()] == 2) {
+                NSLog(@"yoooo");
                 UIButton *btn = [[UIButton alloc] init];
                 [btn setTitle:@"Button" forState:UIControlStateNormal];
                 CGRect btFrame = btn.frame;
-                btFrame.origin.x = 100;
-                btFrame.origin.y = 100;
+                btFrame.origin.x = (CGFloat)(rectangles[i].tl().x - biggestRect.tl().x);
+                btFrame.origin.y = (CGFloat)(rectangles[i].tl().y - biggestRect.tl().y);
                 btn.frame = btFrame;
-                [btn setBackgroundColor:[UIColor redColor]];
+                [btn setBackgroundColor:[UIColor brownColor]];
                 [btn sizeToFit];
-                [instance.view addSubview:btn];
-                //[instance.view insertSubview:btn atIndex:[[instance.view subviews] count]];
+                //[instance.view addSubview:btn];
+                [instance.view insertSubview:btn atIndex:[[instance.view subviews] count]];
             }
-            */
+            else if (typesForRectangles[rectangles[i].area()] == 1) {
+                NSLog(@"yolo");
+                UITextField *btn = [[UITextField alloc] init];
+                [btn setPlaceholder:@"Enter text"];
+                CGRect btFrame = btn.frame;
+                btFrame.origin.x = (CGFloat)(rectangles[i].tl().x - biggestRect.tl().x);
+                btFrame.origin.y = (CGFloat)(rectangles[i].tl().y - biggestRect.tl().y);
+                btn.frame = btFrame;
+                [btn setBackgroundColor:[UIColor yellowColor]];
+                [btn sizeToFit];
+                //[instance.view addSubview:btn];
+                [instance.view insertSubview:btn atIndex:[[instance.view subviews] count]];
+            }
+            else {
             
             CGRect rect = CGRectMake(0,0,//(CGFloat)(rectangles[i].tl().x - biggestRect.tl().x),
                                      //(CGFloat)(rectangles[i].tl().y - biggestRect.tl().y),
@@ -152,7 +177,7 @@ static void cvUIImageToMat(const UIImage* image, cv::Mat& m) {
             [instance.view addSubview:imageView];
             
             rectsMap[rectangles[i].area()] = imageView;
-
+            }
         }
     }
     return cvMatToUIImage(resultImg);
